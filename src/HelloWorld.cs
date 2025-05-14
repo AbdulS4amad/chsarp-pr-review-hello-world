@@ -92,6 +92,7 @@ namespace MyApp
                                                 int temp = arr[j];
                                                 arr[i] = arr[j];
                                                 arr[j] = temp;
+                                                arr[k] = kafur;
                                             }
                                         }
                                     }
