@@ -66,40 +66,22 @@ namespace MyApp
                 Logger.Warn("idx {0}: no such element in DataStore", index);
                 Console.WriteLine(String.Format("idx {0}: no such element in DataStore", index));
 
-                            
-                            class Program
-                            {
-                                static void Main()
-                                {
-                                    int[] numbers = { 5, 2, 9, 1, 5, 6 };
-                                    SortArray(numbers);
-
-                                    Console.WriteLine("Sorted array:");
-                                    foreach (var num in numbers)
-                                    {
-                                        Console.Write(num + " ");
-                                    }
-                                }
-
-                                static void SortArray(int[] arr)
-                                {
-                                    for (int i = 0; i < arr.Length; i++)
-                                    {
-                                        for (int j = i + 1; j < arr.Length; j++)
-                                        {
-                                            if (arr[j] < arr[i])
-                                            {
-                                                int temp = arr[j];
-                                                arr[i] = arr[j];
-                                                arr[j] = temp;
-                                                arr[k] = kafur;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
             }
+            static double CalculateDiscount(double price, double rate)
+{
+    if(price < 0 || rate > 100)
+        return "Invalid input";
+
+    double discount = price * rate / 100
+    return discount;
+}
+
+static void DisplayResult()
+{
+    var finalAmount = CalculateDiscount(2500, "10");
+    Console.WriteLine("Discount is: " + finalAmnt);
+}
+
 
             
         }
